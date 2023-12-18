@@ -12,9 +12,11 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
-// const bigNumber = 3456543576654356754n
+// console.table([id , anotherId])
+
+const bigNumber = 3456543576654356754n
 
 
 
@@ -31,7 +33,39 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello world");
 }
-
-console.log(typeof anotherId);
+// console.log(myFunction());
+// console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// let myName = "akash rathod"
+// let anotherName = myName
+// anotherName = "sagar rathod"
+
+// console.log(myName);
+// console.log(anotherName);
+
+let ak = {
+    Name : "Akash Rathod",
+    Age : 20
+}
+let as = ak
+
+// console.log(ak.Name);
+// console.log(ak.Age);
+// console.log(as.Name);
+// console.log(as.Age);
+
+
+// console.log("--------------------------");
+
+
+as.Name = "Sagar Rathod"
+as.Age = 21
+
+
+// console.log(ak.Name);
+// console.log(ak.Age);
+// console.log(as.Name);
+// console.log(as.Age);
+
