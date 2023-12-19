@@ -1,5 +1,5 @@
-const score = 400
-console.log(score);
+// const score = 400
+// console.log(score);
 
 // const balance = new Number(100)
 // console.log(balance);
@@ -32,3 +32,23 @@ console.log(score);
 // const max = 20
 
 // console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+
+// const score = 100;
+// console.log(score);
+
+// const balance = new Number(200)
+// console.log(balance);
+
+
+// ***************************** Math ******************
+
+// let num = 100.111;
+// console.log(num);
+// console.log(Math.round(num));
+
+// const arr = [1,2,3,4,5,6]
+// console.log(Math.min(1,2,3,4,));
+// console.log(Math.max(1,2,3,4,));
+
+console.log(Math.random() );
