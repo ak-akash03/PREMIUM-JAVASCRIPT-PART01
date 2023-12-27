@@ -82,3 +82,15 @@
 
 // const rus = addTwoNumbers(2,3)
 // console.log(rus);  
+
+
+
+// function fun01() {
+//     console.log("hello fun01 :");
+// }
+
+// fun01();
+
+// const fun02 = () => console.log("hello fun02 :");
+
+// fun02();
