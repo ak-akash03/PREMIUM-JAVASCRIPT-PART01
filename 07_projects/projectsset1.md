@@ -8,7 +8,7 @@
 ## project 1
 
 ```javascript
-console.log("hitesh")
+console.log("akash")
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
@@ -29,9 +29,9 @@ buttons.forEach(function (button) {
     if (e.target.id === 'yellow') {
       body.style.backgroundColor = e.target.id;
     }
-    
+      
   });
-});
+});  
 
 
 ```
