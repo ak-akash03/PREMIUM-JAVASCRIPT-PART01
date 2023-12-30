@@ -9,76 +9,68 @@
     <div>
       <h1>code with akash</h1>
       <br />
-      <button id="startid" class="start">start</button>
-      <button id="stopid" class="stop">stop</button>
+      <button id="start" class="start">start</button>
+      <button id="stop" class="stop">stop</button>
     </div>
 
     <script>
-      const start = document.querySelector("#startid");
-      const stop = document.querySelector("#stopid");
+      const start = document.querySelector("#start");
+      const stop = document.querySelector("#stop");
 
+      const randomColor = function () {
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += hex[Math.floor(Math.random() * 16)];
+        }
+      };
+      return color;
 
+      let intervalId;
+      const startChangingColor = function () {
+        if (!intervalId) {
+          intervalId = setInterval(changeBgColor, 1000);
+        }
 
+        function changeBgColor() {
+          document.body.style.backgroundColor = randomColor();
+        }
+      };
+      const stopChangingColor = function () {
+        clearInterval(intervalId);
+        intervalId = null;
+      };
 
+      document.querySelector("#start").addEventListener("click", startChangingColor);
 
+      document.querySelector("#stop").addEventListener("click", stopChangingColor);
 
+      // let setIN;
+      // start.addEventListener('click', function(){
+      //     setIn = setInterval(fun01 , 1000);
+      //     function fun01(){
+      //         console.log("hello ak : ");
+      //     }
+      // })
 
+      // stop.addEventListener('click', function(){
+      //     clearInterval(setIN);
+      //     console.log("clicked stop : ");
+      // })
 
+      //   const printName = function(){
+      //     console.log("Hello Ak : ");
+      //   }
 
-      
-        // let setIN;
-        // start.addEventListener('click', function(){
-        //     setIn = setInterval(fun01 , 1000);
-        //     function fun01(){
-        //         console.log("hello ak : ");
-        //     }
-        // })
+      //   start.addEventListener('click' , function(){
+      //     setInterval(printName , 1000)
+      //     var setIn = setInterval(printName , 1000)
+      //   }, false)
 
+      //   stop.addEventListener("click" , function(){
+      //     clearInterval(setIn);
+      //   })
 
-        // stop.addEventListener('click', function(){
-        //     clearInterval(setIN);
-        //     console.log("clicked stop : ");
-        // })
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //   const printName = function(){
-    //     console.log("Hello Ak : ");
-    //   }
-
-    //   start.addEventListener('click' , function(){
-    //     setInterval(printName , 1000)
-    //     var setIn = setInterval(printName , 1000)
-    //   }, false)
-      
-    //   stop.addEventListener("click" , function(){
-    //     clearInterval(setIn);
-    //   })
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       //   start.addEventListener("click", function () {
       //     setInterval(function(){
       //         console.log("Hello Ak : ");
