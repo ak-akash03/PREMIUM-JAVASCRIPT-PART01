@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api : Demo</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color: rgb(0, 0, 0);
+        background-color: rgb(209, 209, 209);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This Is Akash Rathod :</h1>
+
+    <script>
+      // fetch('https://api.github.com/users/ak-akash03').then().catch().finally();
+
+      const promiseOne = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Async task is complete ");
+          resolve();
+        }, 1000);
+      });
+
+      promiseOne.then(() => {
+        console.log("promise consumed : ");
+      });
+
+      new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Async Task Two ");
+          resolve();
+        }, 1000);
+      }).then(() => {
+        console.log("Async 2 resolved : ");
+      });
+
+      const promiseThree = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({ username: "akash", email: "ak.akash" });
+        }, 1000);
+      });
+
+      promiseThree.then((users) => {
+        console.log(users);
+      });
+
+      const promiseFour = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          let error = false;
+          if (!error) {
+            resolve({ username: "akash", password: "sagar" });
+          } else {
+            reject("ERROR : something went wrong ");
+          }
+        }, 1000);
+      });
+
+      promiseFour
+        .then((user) => {
+          console.log(user);
+          return user.username;
+        })
+        .then((username) => {
+          console.log(username);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {
+          console.log("The Promise Is Either Resolve Or Reject : ");
+        });
+
+      // console.log(username);
+
+      const promiseFive = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          let error = true;
+          if (!error) {
+            resolve({ username: "Javascript", password: "123" });
+          } else {
+            reject("ERROR : Javascript Went Wrong : ");
+          }
+        }, 1000);
+      });
+
+      async function consumePromiseFie() {
+        try {
+          const response = await promiseFive
+          console.log(response);
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    </script>
+  </body>
+</html>
