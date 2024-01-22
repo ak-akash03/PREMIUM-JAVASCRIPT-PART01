@@ -38,3 +38,10 @@
 //     console.log(password.value);
 // })
 
+// const div = document.querySelector('div')
+// const input = document.querySelector('input')
+
+// input.addEventListener('input',()=>{
+//     div.innerHTML = input.value
+// })
+
