@@ -20,3 +20,21 @@
 // }
 
 // button.addEventListener("click", genRandomColor)
+
+
+// const name = document.querySelector('.Name')
+
+// console.log(name.value);
+
+// const user = document.querySelector('form')
+
+// user.addEventListener('submit', (event) => {
+//     event.preventDefault();
+
+//     const username = document.querySelector('#username')
+//     const password = document.querySelector('#password')
+
+//     console.log(username.value);
+//     console.log(password.value);
+// })
+
