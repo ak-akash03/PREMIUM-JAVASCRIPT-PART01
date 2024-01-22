@@ -43,4 +43,14 @@ console.log("Apna collage Lecture : ");
     // console.log(ans);
 
 
+    // --------------- REDUCE method -----------------
+
+    // const arr = [1,2,4,5,6]
+
+    // const ans = arr.reduce((prev, current) => {
+    //     return current + 1
+    // }, 0) 
+
+    // console.log(ans);
+
     
