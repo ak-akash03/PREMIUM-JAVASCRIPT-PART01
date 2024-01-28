@@ -15,3 +15,13 @@ change directery
 back button
 
 
+
+# mkdir 
+make directory
+
+# rmdir
+remove directory
+
+# touch
+make file
+
