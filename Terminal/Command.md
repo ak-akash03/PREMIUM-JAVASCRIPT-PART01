@@ -25,3 +25,8 @@ remove directory
 # touch
 make file
 
+# rm
+remove files
+
+# rm -rf 
+removes any folders
